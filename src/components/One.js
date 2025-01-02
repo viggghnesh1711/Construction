@@ -7,12 +7,12 @@ import Herocards from './Herocards';
 
 const One = () => {
   return ( 
-    <div className='w-full bg-stone-100 px-6 py-5 sm:px-20 sm:py-14 '>
+    <div className='w-full bg-stone-100 px-6 py-5 sm:px-20 sm:py-14 ng'>
     <Navbar/>
     <div className='py-10 md:pt-16'>
     <HeroSection/>
     </div>
-    <Herocards/>
+    {/* <Herocards/> */}
      
 </div>
   )

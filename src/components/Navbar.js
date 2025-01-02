@@ -28,7 +28,7 @@ const Navbar = () => {
 
       {/* Book Now Button */}
       <div className="hidden md:block">
-        <h1 className="bg-blue-300 font-semibold text-stone-100 px-4 py-2 rounded-lg">Book now</h1>
+        <h1 className="px-6 py-3 bg-black text-white font-medium rounded hover:bg-gray-800 transition duration-200">Book now</h1>
       </div>
 
       {/* Mobile Hamburger Menu */}
