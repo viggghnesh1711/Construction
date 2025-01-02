@@ -11,6 +11,11 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      extend: {
+        backgroundImage: {
+            'custom-bg': "url('/public/Premium Vector _ Construction silhouette background_.jpg')",
+        },
+    },
     },
   },
   plugins: [],
