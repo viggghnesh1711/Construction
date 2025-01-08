@@ -18,39 +18,17 @@ const Navbar = () => {
 
       {/* Desktop Navigation */}
       <div className="hidden md:flex">
-      <ul className="flex gap-8 text-xl">
-  <li className="group">
-    <a href="#Home" className="text-stone-900 relative">
-      Home
-      <span className="absolute left-0 bottom-[-4px] h-[2px] w-0 bg-stone-900 transition-all duration-300 group-hover:w-full"></span>
-    </a>
-  </li>
-  <li className="group">
-    <a href="#Two" className="text-stone-900 relative">
-      About Us
-      <span className="absolute left-0 bottom-[-4px] h-[2px] w-0 bg-stone-900 transition-all duration-300 group-hover:w-full"></span>
-    </a>
-  </li>
-  <li className="group">
-    <a href="#Services" className="text-stone-900 relative">
-      Services
-      <span className="absolute left-0 bottom-[-4px] h-[2px] w-0 bg-stone-900 transition-all duration-300 group-hover:w-full"></span>
-    </a>
-  </li>
-  <li className="group">
-    <a href="#Projects" className="text-stone-900 relative">
-      Projects
-      <span className="absolute left-0 bottom-[-4px] h-[2px] w-0 bg-stone-900 transition-all duration-300 group-hover:w-full"></span>
-    </a>
-  </li>
-  <li className="group">
-    <a href="#Contact" className="text-stone-900 relative">
-      Contact Us
-      <span className="absolute left-0 bottom-[-4px] h-[2px] w-0 bg-stone-900 transition-all duration-300 group-hover:w-full"></span>
-    </a>
-  </li>
-</ul>
-
+        <ul className="flex gap-8 text-xl">
+          {/* Navigation Items */}
+          {["Home", "About Us", "Services", "Projects", "Contact"].map((item) => (
+            <li className="group" key={item}>
+              <a href={`#${item.replace(" ", "")}`} className="text-stone-900 relative">
+                {item}
+                <span className="absolute left-0 bottom-[-4px] h-[2px] w-0 bg-stone-900 transition-all duration-300 group-hover:w-full"></span>
+              </a>
+            </li>
+          ))}
+        </ul>
       </div>
 
       {/* Book Now Button */}
@@ -77,6 +55,15 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isMenuOpen && (
         <div className="absolute top-0 left-0 w-full bg-stone-100 shadow-lg z-10">
+          {/* Close Button */}
+          <button
+            onClick={toggleMenu}
+            className="absolute top-4 right-4 text-black text-xl"
+            aria-label="Close Menu"
+          >
+            &times; {/* You can replace this with an SVG icon if desired */}
+          </button>
+
           <ul className="flex flex-col items-center gap-4 text-lg py-4">
             <li className="group">
     <a href="#Home" className="text-stone-900 relative">
