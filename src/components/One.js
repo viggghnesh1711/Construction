@@ -4,10 +4,9 @@ import Navbar from "@/components/Navbar";
 import HeroSection from './Hero';
 import Herocards from './Herocards';
 
-
 const One = () => {
   return ( 
-    <div className='w-full bg-stone-100 px-6 py-5 sm:px-20 sm:py-14 ng'>
+    <div id="Home" className='w-full bg-stone-100 px-6 py-5 sm:px-20 sm:py-14 '>
     <Navbar/>
     <div className='py-10 md:pt-16'>
     <HeroSection/>
