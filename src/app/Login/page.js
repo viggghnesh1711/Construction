@@ -1,18 +1,44 @@
 "use client";
+import { useRouter } from 'next/navigation';
 import React, { useState } from 'react';
+import toast, { Toaster } from 'react-hot-toast';
+
 
 const Page = () => {
+    const router = useRouter();
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
+    
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault(); 
-        console.log(username);
-        console.log(password); 
+        const response = await fetch('/api/login',{
+            method:'POST',
+            headers:{
+                'Content-Type':'application/json'
+            },
+            body:JSON.stringify({username,password})
+        })
+        if(response.ok){
+            const result = await response.json()
+            if(result.status){
+                toast.success(result.message)
+                router.push('/Dashboard');
+            }
+            else{
+                toast.error(result.message)
+            }
+            
+        }
+        else{
+            const result = await response.json()
+            toast.error(result.message)
+        }
     };
 
     return (
         <div className="flex items-center justify-center min-h-screen px-5 bg-stone-300">
+            <Toaster />
             <div className="w-full max-w-md p-8 space-y-5 bg-stone-100 rounded-lg shadow-2xl">
                 <h2 className="text-2xl font-bold text-center">Login</h2>
                 <form className="space-y-8" onSubmit={handleSubmit}>
