@@ -10,7 +10,6 @@ export async function POST(request){
             desc:form.desc,
             imgurl:form.imageUrl
         })
-        console.log("New project :",project)
         return new Response(JSON.stringify({message:"created project succesfully"}),{
             status:200,
         })
