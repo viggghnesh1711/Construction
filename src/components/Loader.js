@@ -14,7 +14,7 @@ const FuturisticLoader = () => {
 
         {/* Brand Name */}
         <div className="text-center">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-800 tracking-wide">
+          <h1 className="text-2xl md:text-5xl lg:text-6xl font-extrabold text-gray-800 tracking-wide">
             Shinde Construction
           </h1>
           <p className="text-sm md:text-base lg:text-lg text-gray-600">
