@@ -2,8 +2,8 @@ import React from 'react'
 
 const Twopartone = () => {
   const handleClick = () => {
-    const phoneNumber = "919987309105"; // Replace with your WhatsApp business phone number
-    const message = "Hello, I’m interested in your services"; // Customize the message
+    const phoneNumber = "919373609566"; // Replace with your WhatsApp business phone number
+    const message = "Hello, I’m interested in your services 👋"; // Customize the message
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.location.href = whatsappUrl;
   };
