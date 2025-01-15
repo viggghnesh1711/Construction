@@ -7,7 +7,7 @@ const Back = () => {
     <button
     className="bg-stone-900 hover:bg-stone-500 text-white font-semibold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full"
 >
-    Back
+    Go Back
 </button>
 </Link>
   )

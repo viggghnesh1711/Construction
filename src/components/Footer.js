@@ -1,5 +1,5 @@
 import React from "react";
-import { FaFacebookF, FaTwitter, FaYoutube, FaLinkedinIn } from "react-icons/fa"
+import { FaFacebookF, FaTwitter, FaYoutube, FaLinkedinIn,FaInstagram } from "react-icons/fa"
 
 const Footer = () => {
   return (
@@ -9,7 +9,7 @@ const Footer = () => {
           {/* Left Section */}
           <div className="text-left md:w-1/2">
             <h2 className="text-3xl sm:text-6xl font-bold mb-2">
-              Join Divi Today. <br /> Getting More Done Together.
+              Join Us Today. <br /> Getting More Done Together.
             </h2>
           </div>
 
@@ -19,21 +19,22 @@ const Footer = () => {
             {/* Phone Number */}
             <div>
               <h3 className="font-semibold text-lg sm:text-2xl mb-1">Phone Number</h3>
-              <p className="text-base sm:text-lg">(255) 352-6258</p>
+              <p className="text-base sm:text-lg">9373609566</p>
+              <p className="text-base sm:text-lg">Viraj Shinde <span className='font-semibold'>(ENGG)</span> </p>
             </div>
 
             {/* Email */}
             <div>
               <h3 className="font-semibold text-lg sm:text-2xl mb-1">Email</h3>
-              <p className="text-base sm:text-lg">hello@divicowork.com</p>
+              <p className="text-base sm:text-lg">virajshinde250002@gmail.com</p>
             </div>
 
             {/* Social Media */}
             <div>
             <h3 className="font-semibold text-lg sm:text-2xl mb-1">Follow</h3>
             <div className="flex space-x-3">
-              <a href="#" className="text-white hover:text-gray-400">
-                <FaFacebookF size={30} />
+              <a href="https://www.instagram.com/shinde_construction_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" className="text-white hover:text-gray-400">
+                <FaInstagram size={30} />
               </a>
               <a href="#" className="text-white hover:text-gray-400">
                 <FaTwitter size={30} />

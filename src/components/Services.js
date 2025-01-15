@@ -1,30 +1,30 @@
 import React from 'react';
-import { FaPlaneDeparture } from 'react-icons/fa'; // Airport pickup icon
-import { FaCalendarAlt } from 'react-icons/fa'; // Easy booking icon
+import { SiCssdesignawards } from "react-icons/si";
+import { MdOutlineConstruction } from "react-icons/md";
 import { FaUserTie } from 'react-icons/fa'; // Best tour guide icon
-import { FaGift } from 'react-icons/fa'; // Lots of promos icon
+import { RiContractFill } from "react-icons/ri";
 
 const Services = () => {
     const values = [
         {
-          icon: <FaPlaneDeparture className="text-4xl sm:text-5xl mb-4 sm:mb-6 text-stone-300" />, // Airport pickup icon
-          title: "Airport pickup",
-          description: "We provide escort from the airport to the hotel.",
+          icon: <SiCssdesignawards className="text-4xl sm:text-5xl mb-4 sm:mb-6 text-stone-300" />, // Airport pickup icon
+          title: "Design",
+          description: "Crafting innovative and functional designs tailored to your vision and needs.",
         },
         {
-          icon: <FaCalendarAlt className="text-4xl sm:text-5xl mb-4 sm:mb-6 text-stone-300" />, // Easy booking icon
-          title: "Easy booking",
-          description: "Quick and easy booking of tours for upcoming dates.",
+          icon: <MdOutlineConstruction className="text-4xl sm:text-5xl mb-4 sm:mb-6 text-stone-300" />, // Easy booking icon
+          title: "Construction",
+          description: "Delivering high-quality construction services for residential, commercial, and industrial projects",
         },
         {
           icon: <FaUserTie className="text-4xl sm:text-5xl mb-4 sm:mb-6 text-stone-300" />, // Best tour guide icon
-          title: "Best tour guide",
-          description: "Our best tour guide is ready to guide your trip.",
+          title: "Supervising",
+          description: "On-site supervision to guarantee quality, safety, and smooth project progression.",
         },
         {
-          icon: <FaGift className="text-4xl sm:text-5xl mb-4 sm:mb-6 text-stone-300" />, // Lots of promos icon
-          title: "Lots of promos",
-          description: "Various promotions and drawings of tours.",
+          icon: <RiContractFill className="text-4xl sm:text-5xl mb-4 sm:mb-6 text-stone-300" />, // Lots of promos icon
+          title: "Labor Contracting",
+          description: "Providing skilled labor for various construction tasks, ensuring efficiency and expertise",
         },
     ];
 
