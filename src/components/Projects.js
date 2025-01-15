@@ -1,7 +1,7 @@
 "use client"
 import React, { useEffect, useState } from 'react';
-import Mobprojects from "@/components/Mobprojects";
-import Lapprojects from "@/components/Lapprojects";
+import Mobprojects from "../components/Mobprojects";
+import Lapprojects from "../components/Lapprojects";
 
 const Projects = () => {
     const [isMobile, setIsMobile] = useState(false);

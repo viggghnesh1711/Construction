@@ -4,6 +4,12 @@ import Logo from "./Logo"; // Replace with your actual Logo component
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const handleClick = () => {
+    const phoneNumber = "919987309105"; // Replace with your WhatsApp business phone number
+    const message = "Hello, I’m interested in your services"; // Customize the message
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.location.href = whatsappUrl;
+  };
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -33,7 +39,9 @@ const Navbar = () => {
 
       {/* Book Now Button */}
       <div className="hidden md:block">
-        <h1 className="px-6 py-3 bg-black text-white font-medium rounded hover:bg-gray-800 transition duration-200">Book now</h1>
+        <button 
+        onClick={handleClick}
+        className="px-6 py-3 bg-black text-white font-medium rounded hover:bg-gray-800 transition duration-200">Book now</button>
       </div>
 
       {/* Mobile Hamburger Menu */}
@@ -96,7 +104,9 @@ const Navbar = () => {
     </a>
   </li>
             <li>
-              <h1 className="bg-blue-300 text-stone-100 px-4 py-2 rounded-lg">Book now</h1>
+            <button 
+        onClick={handleClick}
+        className="px-6 py-3 bg-black text-white font-medium rounded hover:bg-gray-800 transition duration-200">Book now</button>
             </li>
           </ul>
         </div>

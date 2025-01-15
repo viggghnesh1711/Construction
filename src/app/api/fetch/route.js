@@ -1,4 +1,4 @@
-import Project from "@/app/models/Project";
+import Project from "@/app/models/Project"
 import connectMongo from "@/lib/dbConnect";
 
 export async function GET(request){

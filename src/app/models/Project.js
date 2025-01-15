@@ -13,7 +13,13 @@ const projectSchema = new mongoose.Schema({
     createdAt:{
         type:Date,
         default:Date.now()
-    }
+    },
+    colSpan:{
+        type:String
+    },
+    rowSpan:{
+        type:String
+    },
 })
 
 const Project = mongoose.models.Project || mongoose.model('Project',projectSchema)

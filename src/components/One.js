@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image';
-import Navbar from "@/components/Navbar";
+import Navbar from "../components/Navbar";
 import HeroSection from './Hero';
 import Herocards from './Herocards';
 
@@ -11,7 +11,6 @@ const One = () => {
     <div className='py-10 md:pt-16'>
     <HeroSection/>
     </div>
-    {/* <Herocards/> */}
      
 </div>
   )

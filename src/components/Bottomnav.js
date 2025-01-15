@@ -11,7 +11,7 @@ const Bottomnav = () => {
     > 
     <Link href='/Dashboard'><GoHome className='text-3xl'/></Link>
     
-    <Link href='/Login'><FiBarChart className='text-3xl'/></Link>
+    <Link href='/Services'><FiBarChart className='text-3xl'/></Link>
     </div>
   )
 }

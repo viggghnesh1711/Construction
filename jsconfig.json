@@ -1,7 +1,10 @@
 {
-  "compilerOptions": {
-    "paths": {
-      "@/*": ["./src/*"]
-    }
-  }
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "@/*": ["src/*"],  // Adjust 'src' to your actual source directory
+            // Add more aliases as needed
+        }
+    },
+    "exclude": ["node_modules", "build"]  // Exclude directories that shouldn't be included
 }

@@ -11,6 +11,6 @@ export function middleware(request) {
 }
 
 export const config = {
-    matcher: ['/Dashboard', '/another-protected-route'], 
+    matcher: ['/Dashboard', '/Services'], 
 };
 
